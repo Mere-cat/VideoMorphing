@@ -139,10 +139,9 @@ tri_index_map(valid_tri_idx) = t(valid_tri_idx);
 
 affine transformation 的數學式即：
 
-![image-20221228012241176](/home/kase/.config/Typora/typora-user-images/image-20221228012241176.png)
+![image-math-function](img/math.png)
 
 也就是 $p' = Ap$ ，我們的目標是找到 p，$p = A^{-1}p'$
-
 ```matlab
 p2 = transpose([col, row, ones(size(col,1),1)]); % [x';y';1]
 
@@ -239,7 +238,7 @@ close(video); %close the file
 
 我的 matlab 無法以內建函式輸出 .mp4 檔案：
 
-![image-20221227235318205](/home/kase/.config/Typora/typora-user-images/image-20221227235318205.png)
+![image-error](img/error.png)
 
 僅支援以上列表的檔案格式。這似乎是系統問題（.mp4 格式似乎不支援 linux），應該無法解決，只能自己上網轉檔。
 
